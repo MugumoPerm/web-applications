@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color:aliceblue;
+ 
+}
+.home-lg a{
+    color: white;
+    text-decoration: none;
+}
+h3 a{
+    text-decoration: none;
+    color: aliceblue;
+    position: absolute;
+    top: 6%;
+    right: 0;
+    margin-right: 2rem;
+    justify-content: flex-end ;
+    display: flex;
+    border-radius: .8rem;
+    padding: .1rem;
+    border: 2px solid greenyellow;
+
+}
+h3 a:hover{
+    color: rgb(36, 33, 33);
+    background-color: chartreuse;
+    transition: all .8s;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 70vh;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+.home{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(200%);
+    transition: all 2s;
+}
+.home-lg{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(550%);
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.logo{
+    background-size: cover;
+    display: flex ;
+    width: 10vw;
+    height: 10vh;
+    float: left;
+    margin-left: 1rem;
+    
+
+}
+
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(3){
+    transition-delay: 400ms;
+}
+.logo:nth-child(4){
+    transition-delay: 600ms;
+}
+
+
+/* Tree logo glow */
+
+.sankini-logo{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    place-items: center;
+    top: 5%;
+   
+}
+.sankini-logo img{
+    color: white;
+    width: 10rem;
+    height: auto;
+}
+.light{
+    position: absolute;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+    filter: blur(10px);
+    z-index: -1;
+    transition: all 2s;
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }

@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'styles/index.css' %}">
+{% endblock link %}
+
+
+{% block body %}
+<h1 class="home-lg hidden"><a href="{% url 'home' %}">Sankini</a></h1>
+<h3> <a href="{% url 'login' %}" class="user hidden">Login</a> </h3></h1>
+<section class="hidden">
+    <div class="sankini-logo">
+        <div class="light hidden"></div>
+            <img src="{% static 'images/Tree_icon.svg' %}" alt="">
+        </div>
+    <h1>Hi Swervo</h1>
+    <p class="home hidden">This is my Sankini website</p>
+    
+</section>
+
+<section class="hidden">
+    <h2 class="home hidden">Buy My Products Here</h2>
+    <p>
+        The things you own end up owning you. <br>
+        It's only after you lose everything that you're free to do anything
+    </p>
+
+</section>
+<section class="hidden">
+    <h2>Buy My Products Here</h2>
+    <p>
+        The things you own end up owning you. <br>
+        It's only after you lose everything that you're free to do anything
+    </p>
+
+</section>
+<section class="hidden">
+    <h2>Buy My Products Here</h2>
+    <p>
+        The things you own end up owning you. <br>
+        It's only after you lose everything that you're free to do anything
+    </p>
+
+</section>
+<section class="hidden">
+    <h2>Buy My Products Here</h2>
+    <p>
+        The things you own end up owning you. <br>
+        It's only after you lose everything that you're free to do anything
+    </p>
+
+</section>
+
+<section class="hidden">
+    <h2>It's Worth Risking For</h2>
+    <div class="logos">
+        <div class="logo hidden">
+            <img src="{% static 'images/car.png' %}" alt="">
+        </div>
+        <div class="logo hidden">
+            <img src="{% static 'images/1 (1).png' %}" alt="">
+        </div>
+        <div class="logo hidden">
+            <img src="{% static 'images/1 (2).png' %}" alt="">
+        </div>
+        <div class="logo hidden">
+            <img src="{% static 'images/1 (3).png' %}" alt="">
+        </div>
+    </div>
+</section>
+    
+
+{% endblock body %}

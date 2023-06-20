@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.144);
+    backdrop-filter: blur(5px);
+    transition: backdrop-filter 0.3s;
+  }
+  .navbar a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight:bolder;
+  
+  }
+  .c-line{
+    background-color: greenyellow;
+    height: .8rem;
+    width: 90%;
+    z-index: -2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    filter: blur(.5rem);
+}
+
+/* footer */
+
+.footer{
+  background-color: #201f1f;
+  position: relative;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 6rem;
+  color:gray
+  
+}
+.footer_container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  
+}
+.social_links{
+ display: flex;
+ justify-content: center;
+ margin-top: 2rem;
+ position: absolute;
+
+
+}
+.footer .footer_container span{
+  width: 1.2rem;
+  height: auto;
+  left: 0;
+  position: absolute;
+
+}
+span{
+  position: absolute;
+}
+span .footer_name{
+  font-weight: bolder;
+  font-size: larger;
+  margin-top: 10%;
+}
+.social_links a img{
+  background-size: cover;
+  display: flex;
+  float: right;
+  width: 20px;
+  height: auto;
+  margin: 2px;
+}
+.description {
+  font-size: lighter;
+  font-weight:300 ;
+  color: aliceblue;
+}
+.footer_logo{
+  
+  right: 5%;
+  display: flex;
+  align-items:end;
+  position: absolute;
+}
+.footer_logo img{
+  width: 3rem;
+  height: auto;
+  
+}
